@@ -112,9 +112,9 @@ body {
    .announcement-box {
     background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
     color: #ffffff;
-    padding: var(--spacing-lg);
-    border-radius: 8px;
-    margin-bottom: var(--spacing-xl);
+    padding: var(--spacing-md) var(--spacing-lg);
+    border-radius: 6px;
+    margin-bottom: var(--spacing-lg);
     display: flex;
     align-items: center;
     gap: var(--spacing-md);
@@ -145,7 +145,7 @@ body {
 }
 
 .announcement-icon {
-    font-size: 2em;
+    font-size: 1.5em;
     flex-shrink: 0;
     animation: pulse 2s ease-in-out infinite;
 }
@@ -160,8 +160,8 @@ body {
 }
 
 .announcement-content {
-    font-size: 1.15em;
-    line-height: 1.6;
+    font-size: 1em;
+    line-height: 1.5;
     position: relative;
     z-index: 1;
     font-weight: 700;
@@ -170,10 +170,10 @@ body {
 .announcement-content strong {
     color: #ffffff;
     font-weight: 800;
-    font-size: 1.2em;
-    display: block;
-    margin-bottom: 0.25rem;
-    letter-spacing: 0.02em;
+    font-size: 1.05em;
+    display: inline;
+    margin-right: 0.5rem;
+    letter-spacing: 0.01em;
 }
 
 /* ===================================
