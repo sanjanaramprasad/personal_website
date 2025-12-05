@@ -382,15 +382,19 @@ section {
     padding-top: 0.5rem;
 }
 
+.bio p {
+    margin-bottom: var(--spacing-sm);
+}
+
 .bio-intro {
     font-size: 1.1em;
     color: var(--color-text);
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
 }
 
 .bio-outro {
     color: var(--color-text-light);
-    margin-top: var(--spacing-lg);
+    margin-top: var(--spacing-md);
 }
 
 /* Research Box */
