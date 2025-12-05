@@ -107,6 +107,76 @@ body {
 }
 
 /* ===================================
+   ANNOUNCEMENT BOX
+   =================================== */
+   .announcement-box {
+    background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+    color: #ffffff;
+    padding: var(--spacing-lg);
+    border-radius: 8px;
+    margin-bottom: var(--spacing-xl);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    box-shadow: 0 4px 20px rgba(220, 38, 38, 0.3);
+    border: 3px solid #991b1b;
+    position: relative;
+    overflow: hidden;
+}
+
+.announcement-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.08) 50%, transparent 70%);
+    animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.announcement-icon {
+    font-size: 2em;
+    flex-shrink: 0;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.announcement-content {
+    font-size: 1.15em;
+    line-height: 1.6;
+    position: relative;
+    z-index: 1;
+    font-weight: 700;
+}
+
+.announcement-content strong {
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 1.2em;
+    display: block;
+    margin-bottom: 0.25rem;
+    letter-spacing: 0.02em;
+}
+
+/* ===================================
    HEADER STYLES
    =================================== */
 header {
